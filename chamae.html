@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monterde and Nano</title>
+    <link rel="stylesheet" href="chamae.css">
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        window.onload = function() {
+            showSection('home');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1> Git Collaboration </h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>A Git Collaboration Activity for Application Development.</p>
+            <p1>Submitted by Monterde, Mae Ann D. and Nano, Lady Charlote A.</p1>
+            <br>
+            <p2>Submitted to Prof. Peragrino Amador </p2>
+            <br>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('TaskOwner')">Task Owner</a></li>
+                    <li><a href="#" onclick="showSection('TaskCollaborator')">Task Collaborator</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="TaskOwner">
+            <h2>Task Owner</h2>
+            <p>Here are the responsibilities and tasks assigned to the Task Owner.</p>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Back</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="MainFile">
+            <h2>Main File</h2>
+            <p>This section contains the main project files.</p>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Back</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="TaskCollaborator">
+            <h2>Task Collaborator</h2>
+            <p>Here are the responsibilities and contributions of the Task Collaborator.</p>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Back</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cha&Mae Website Net., All rights reserved. </p>
+    </footer>
+</body>
+</html>
